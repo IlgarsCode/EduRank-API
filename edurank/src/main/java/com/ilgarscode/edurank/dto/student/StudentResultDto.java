@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class StudentResultDto {
+public class git StudentResultDto {
 
     private String studentId;
     private String fullName;

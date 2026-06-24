@@ -1,7 +1,4 @@
-package com.ilgarscode.edurank.dto;
-
-import com.ilgarscode.edurank.entity.ExamStatus;
-import com.ilgarscode.edurank.entity.Question;
+package com.ilgarscode.edurank.entity;
 
 import java.time.LocalDateTime;
 import java.util.List;

@@ -13,7 +13,7 @@ import com.ilgarscode.edurank.service.ExamConfigService;
 import com.ilgarscode.edurank.service.StudentService;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
-import com.ilgarscode.edurank.dto.ExamWindowDto;
+import com.ilgarscode.edurank.entity.ExamWindowDto;
 import java.time.Duration;
 import java.util.stream.Collectors;
 import com.ilgarscode.edurank.dto.student.StudentAnswerHistoryDto;
