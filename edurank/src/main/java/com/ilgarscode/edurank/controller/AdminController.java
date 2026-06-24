@@ -23,13 +23,14 @@ public class AdminController {
         this.adminService = adminService;
         this.examSessionRepository = examSessionRepository;
     }
+
     @PostMapping("/create")
     public Student createAdmin(
             @RequestBody AdminCreateDto dto
     ) {
-
         return adminService.createAdmin(dto);
     }
+
     @GetMapping("/exam-results")
     public List<ExamSession> getAllExamResults() {
 

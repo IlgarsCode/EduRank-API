@@ -18,7 +18,7 @@ public class AutoSubmitService {
         this.examSessionRepository = examSessionRepository;
     }
 
-    @Scheduled(fixedRate = 60000) // hər 1 dəqiqə
+    @Scheduled(fixedRate = 60000)
     public void autoSubmitExpiredExams() {
 
         List<ExamSession> sessions = examSessionRepository.findAll();

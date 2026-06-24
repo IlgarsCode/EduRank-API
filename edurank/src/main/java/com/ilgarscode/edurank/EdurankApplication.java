@@ -9,9 +9,6 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 public class EdurankApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(
-				EdurankApplication.class,
-				args
-		);
+		SpringApplication.run(EdurankApplication.class, args);
 	}
 }

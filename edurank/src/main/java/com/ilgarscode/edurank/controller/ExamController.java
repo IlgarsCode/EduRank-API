@@ -287,6 +287,7 @@ public class ExamController {
                                 "Bu sessiyaya giriş icazəniz yoxdur"
                         ));
     }
+
     @GetMapping("/my-last-session")
     public ExamSession myLastSession() {
 
@@ -307,6 +308,7 @@ public class ExamController {
                                 "Session tapılmadı"
                         ));
     }
+
     @GetMapping("/history")
     public List<ExamSession> myHistory() {
 
@@ -323,6 +325,7 @@ public class ExamController {
                         studentId
                 );
     }
+
     @GetMapping("/history/{studentId}")
     public List<ExamSession> studentHistory(
             @PathVariable String studentId
@@ -351,6 +354,7 @@ public class ExamController {
                         studentId
                 );
     }
+
     @GetMapping("/answers/{sessionId}")
     public List<ExamSessionAnswer> getAnswers(
             @PathVariable Long sessionId
@@ -392,6 +396,7 @@ public class ExamController {
         return examSessionAnswerRepository
                 .findBySession(session);
     }
+
     @GetMapping("/window/{sessionId}")
     public ExamWindowDto getExamWindow(
             @PathVariable Long sessionId
@@ -462,6 +467,7 @@ public class ExamController {
                 questions
         );
     }
+
     @GetMapping("/review/{sessionId}")
     public List<StudentAnswerHistoryDto> reviewExam(
             @PathVariable Long sessionId
